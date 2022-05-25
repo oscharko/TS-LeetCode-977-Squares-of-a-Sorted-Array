@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["let nums = [-4,-1,0,3,10]\n\nfunction sortedSquares(nums: number[]): number[] {\n  /*\n  # Description for array v:\n  #   - v[0] = input array\n  #   - v[1] = output array squares and sorted\n  */\n  let v: [number[], number[]] = [nums, []]\n  v[0].forEach(function(i) {\n    v[1].push(Math.pow(i, 2));\n  });\n  v[1].sort((a, b) => a - b)\n  return v[1];\n}\n\nconsole.log(sortedSquares(nums))"],
+  "mappings": "AAAA,IAAI,OAAO,CAAC,IAAG,IAAG,GAAE,GAAE;AAEtB,uBAAuB,OAA0B;AAM/C,MAAI,IAA0B,CAAC,OAAM;AACrC,IAAE,GAAG,QAAQ,SAAS,GAAG;AACvB,MAAE,GAAG,KAAK,KAAK,IAAI,GAAG;AAAA;AAExB,IAAE,GAAG,KAAK,CAAC,GAAG,MAAM,IAAI;AACxB,SAAO,EAAE;AAAA;AAGX,QAAQ,IAAI,cAAc;",
+  "names": []
+}
